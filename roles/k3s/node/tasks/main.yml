@@ -9,7 +9,7 @@
     mode: 0755
 
 - name: Enable and check K3s service
-  systemd:
+  ansible.builtin.systemd:
     name: k3s-node
     daemon_reload: yes
     state: restarted
