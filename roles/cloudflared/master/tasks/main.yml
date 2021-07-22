@@ -1,5 +1,5 @@
 ---
-- name: Download cloudflared binary arm64
+- name: Install Longhorn prereqs
   get_url:
     url: https://github.com/cloudflare/cloudflared/releases/download/{{cloudflared_version}}/cloudflared-linux-arm64
     checksum: sha256:{{cloudflared_checksum}}
